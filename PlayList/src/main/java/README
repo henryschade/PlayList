@@ -1,0 +1,88 @@
+# Project 2: Play List
+
+* Author: Henry J. Schade
+* Class: CS 121 Section 004
+* Semester: Fall 2016
+* Project Name: PlayList
+
+## Overview
+Java program that manages a user's songs in a simplified playlist.
+An input.txt file should have been provided (for automated testing), but any can be used if a line is added 
+to the begining with the character 8 in it.
+
+
+## Compiling and Using
+Do the following from the command line and in the Project directory.
+Compile using: 
+	"javac [Project Name]".
+Run using: 
+	"java [Project Name]"
+or
+	"java [Project Name] < input.txt"
+
+
+## Discussion
+The issues I ran into were all mainly related to doing things above and beyond what was called for.
+ArrayLists took a bit for me to figure out how to initialize (properly), for some reason.
+
+I initially got confused, by the instructions, as I was finishing step 2.
+Both step 1 and 2 were easy, but no where did the instructions indicated "read/get X number of songs", 
+so when I finished w/ step 2 (to read one song), I cleaned up my code then went to move on to step 3 and 
+the note before step one stopped me in my tracks.  So I double checked the Extra Credit section, and it 
+had all the steps/features I felt were a MUST for something like this.
+
+The sorting was a bit of a challenge, probably because I wanted to sort the ArrayList as a collection, and 
+not create a new list as I itterated through the current list.  I'm pretty sure I understand the Comparator() 
+methods/routines, but I won't sware to it.  I'm also not sure why the 4 I created, and more if I wanted to do 
+each field, are not all under one Comparator() with a unique method, 4 in my case, at the compare() level.  I 
+also suspect they really should be in the Song class.
+
+Added option 8 into the menu, after asking about the automated testing process in class.
+
+Writing, and reading, a file were a bit tricky.  I've delt with data streams in other languages, so thought 
+it would be pretty easy, but the initial examples I found seamed to have extra steps in the process that just 
+made things confusing.  Trying to read a file with a data stream was even more complicated than writting to a 
+file.  Thankfully I remembered, and found samples about how to use scanner to read a file.
+
+
+## Extra Credit (5 points)
+You may notice that you are repeating the same code to read in the song data from the user for each 
+song (Yuck! This would get really messy if we had 10 songs).
+Modify your main method to use a loop to read in the songs from the user. As you read and create new 
+songs, you will need to store your songs in an ArrayList.
+This can be quite challenging if you have never used ArrayLists before, so we recommend saving a backup 
+of your original implementation before attempting the extra credit.
+
+
+## Sources used
+The project assignment page, and links there in as neccessary:
+http://cs.boisestate.edu/~cs121/projects/p2/
+
+Google search engine:
+For java syntax lookup.  Quick searches on different java methods, and their paramaters.
+
+The code has also been documented with URL's, near the relevent code blocks, that were used to "discover" how 
+to implement things we have not been taught yet, that were above and beyond.
+
+Misc URL's that helped along the way:
+http://beginnersbook.com/2013/12/java-strings/
+http://beginnersbook.com/2013/12/java-string-split-method-example/
+http://beginnersbook.com/2013/12/how-to-convert-string-to-int-in-java/
+
+ArrayList info:
+http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html
+    http://www.homeandlearn.co.uk/java/array_lists.html
+	http://stackoverflow.com/questions/14207005/warning-arraylist-is-a-raw-type-references-to-generic-type-arrayliste-should
+
+How to setup sorting of ArrayLists:
+http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/
+http://stackoverflow.com/questions/18441846/how-to-sort-an-arraylist-in-java
+
+Write to a file:
+http://www.cs.utexas.edu/~mitra/csSummer2012/cs312/lectures/fileIO.html
+https://www.tutorialspoint.com/java/java_filewriter_class.htm
+http://stackoverflow.com/questions/23728493/what-ioexception-do-i-use-for-filewriter
+
+Read a file:
+http://stackoverflow.com/questions/13185727/reading-a-txt-file-using-scanner-class-in-java
+
