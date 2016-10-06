@@ -10,7 +10,6 @@ import java.io.*;
  *
  * Manages a user's songs in a simplified playlist.
  *
- *
  * @author Marissa Schmidt
  * @author Henry J. Schade
  */
