@@ -9,7 +9,7 @@ import java.io.*;
  * CS 121 Project 2: Play List
  *
  * Manages a user's songs in a simplified playlist.
- * 
+ *
  * @author Marissa Schmidt
  * @author Henry J. Schade
  */
